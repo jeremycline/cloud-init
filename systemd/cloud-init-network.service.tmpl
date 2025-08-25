@@ -2,7 +2,7 @@
 [Unit]
 # https://docs.cloud-init.io/en/latest/explanation/boot.html
 Description=Cloud-init: Network Stage
-{% if variant not in ["almalinux", "azurelinux", "cloudlinux", "photon", "rhel"] %}
+{% if variant not in ["almalinux", "azurelinux", "cloudlinux", "photon", "rhel", "fedora"] %}
 DefaultDependencies=no
 {% endif %}
 Wants=cloud-init-local.service
